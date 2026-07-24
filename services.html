@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxe Aura Salon Services - Premium Hair, Skin, Nails, and Bridal Treatments.">
+    <title>Our Services | Luxe Aura Salon</title>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- CSS Dependencies -->
+    <link rel="stylesheet" href="css/utilities/variables.css">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/typography.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/cards.css">
+    <link rel="stylesheet" href="css/layout/navigation.css">
+    <link rel="stylesheet" href="css/layout/footer.css">
+    <link rel="stylesheet" href="css/pages/services.css">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Luxury Salon, Hair Styling, Beauty Parlour, Bridal Makeup, Skin Care, Luxe Aura">
+    <meta name="author" content="Luxe Aura Salon">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://luxeaura.com/services.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://luxeaura.com/services.html">
+    <meta property="og:title" content="Our Services | Luxe Aura Salon">
+    <meta property="og:description" content="Where luxury meets unparalleled expertise. Elevating beauty standards with personalized care.">
+    <meta property="og:image" content="https://luxeaura.com/images/cta_reception_background.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://luxeaura.com/services.html">
+    <meta property="twitter:title" content="Our Services | Luxe Aura Salon">
+    <meta property="twitter:description" content="Where luxury meets unparalleled expertise. Elevating beauty standards with personalized care.">
+    <meta property="twitter:image" content="https://luxeaura.com/images/cta_reception_background.png">
+
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Luxe Aura Salon",
+      "url": "https://luxeaura.com/"
+    }
+    </script>
+
+</head>
+<body class="services-body">
+    <!-- ==============================================
+         LOADING EXPERIENCE
+         ============================================== -->
+    <div id="loader">
+        <img src="images/luxe_aura_logo.png" alt="Luxe Aura Salon" style="height: 80px; opacity: 0; transition: opacity 0.8s ease;">
+    </div>
+
+    <!-- ==============================================
+         NAVIGATION
+         ============================================== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/luxe_aura_logo.png" alt="Luxe Aura Salon" style="height: 60px; object-fit: contain;">
+            </a>
+            
+            <ul class="nav-links">
+                <li class="nav-item">Home
+                    <div class="dropdown-menu">
+                        <a href="index.html" class="dropdown-item">Home 1</a>
+                        <a href="home-2.html" class="dropdown-item">Home 2</a>
+                    </div>
+                </li>
+                <li class="nav-item active"><a href="services.html">Services</a></li>
+                <li class="nav-item"><a href="#">Gallery</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button class="btn btn-primary btn-sm magnetic nav-book-btn">Book Appointment</button>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </div>
+            </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==============================================
+         SECTION 1: SERVICES HERO
+         ============================================== -->
+    <section class="services-hero">
+        <div class="s-hero-bg"></div>
+        <div class="s-hero-container">
+            <!-- Left Text -->
+            <div class="s-hero-content">
+                <div class="breadcrumb"><a href="index.html">Home</a> / Services</div>
+                <h1 class="s-hero-heading">
+                    <span class="line">Luxury Beauty</span>
+                    <span class="line">Services Designed</span>
+                    <span class="line highlight">Around You</span>
+                </h1>
+                <p class="s-hero-desc">Discover our comprehensive range of premium hair, skin, bridal, nail, and wellness services. We pride ourselves on personalised consultations, certified experts, and the finest luxury products in the industry.</p>
+                
+                <div class="s-hero-btns">
+                    <button class="btn btn-primary magnetic glow-hover">Book Consultation</button>
+                    <button class="btn btn-outline magnetic">Download Menu</button>
+                </div>
+            </div>
+
+            <!-- Right Layered Collage -->
+            <div class="s-hero-collage">
+                <div class="collage-main">
+                    <img src="images/hero_editorial_salon.png" alt="Consultation">
+                </div>
+                
+                <div class="collage-float float-1">
+                    <img src="images/service_hair_colouring.png" alt="Shampoo Station" style="object-position: right top;" loading="lazy">
+                </div>
+                
+                <div class="collage-float float-2">
+                    <img src="images/hero_hair_styling.png" alt="Precision Scissors" style="object-position: center bottom; transform: scale(1.2);">
+                </div>
+
+                <!-- Glass Cards -->
+                <div class="glass-metric g-metric-1">
+                    <div class="metric-val">50+</div>
+                    <div class="metric-label">Services</div>
+                </div>
+                
+                <div class="glass-metric g-metric-2">
+                    <div class="metric-val">12+</div>
+                    <div class="metric-label">Expert Stylists</div>
+                </div>
+                
+                <div class="glass-metric g-metric-3">
+                    <div class="metric-val">4.9<i data-lucide="star" style="width: 14px; fill: var(--color-primary); display: inline-block;"></i></div>
+                    <div class="metric-label">Client Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION 2: HAIR SERVICES
+         ============================================== -->
+    <section class="staggered-services reveal">
+        <div class="section-header center">
+            <span class="s-tag">Precision & Care</span>
+            <h2>Hair Services</h2>
+        </div>
+        
+        <div class="stagger-container">
+            <!-- Card 1 -->
+            <div class="stagger-card align-left">
+                <div class="stagger-img">
+                    <img src="images/hero_hair_styling.png" alt="Haircut & Styling">
+                </div>
+                <div class="stagger-content">
+                    <div class="s-icon"><i data-lucide="scissors"></i></div>
+                    <h3>Haircut & Styling</h3>
+                    <div class="s-meta"><span>45 - 60 Min</span> <span>From $85</span></div>
+                    <p>Bespoke haircuts and styling tailored to your face shape, lifestyle, and hair texture by our master stylists.</p>
+                    <button class="btn btn-outline s-book-btn">Book Now</button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="stagger-card align-right">
+                <div class="stagger-img">
+                    <img src="images/service_hair_colouring.png" alt="Hair Colouring" loading="lazy">
+                </div>
+                <div class="stagger-content">
+                    <div class="s-icon"><i data-lucide="droplet"></i></div>
+                    <h3>Hair Colouring</h3>
+                    <div class="s-meta"><span>90 - 150 Min</span> <span>From $150</span></div>
+                    <p>From seamless balayage to full-colour transformations using premium, ammonia-free products for vibrant health.</p>
+                    <button class="btn btn-outline s-book-btn">Book Now</button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="stagger-card align-left">
+                <div class="stagger-img">
+                    <img src="images/service_bento_spa.png" alt="Hair Spa" style="filter: hue-rotate(15deg);" loading="lazy">
+                </div>
+                <div class="stagger-content">
+                    <div class="s-icon"><i data-lucide="wind"></i></div>
+                    <h3>Hair Spa</h3>
+                    <div class="s-meta"><span>60 Min</span> <span>From $120</span></div>
+                    <p>Intensive hydration, scalp therapy, and deep conditioning massages for renewed hair vitality.</p>
+                    <button class="btn btn-outline s-book-btn">Book Now</button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="stagger-card align-right">
+                <div class="stagger-img">
+                    <img src="images/expert_senior_stylist.png" alt="Keratin Treatment" style="object-position: center top;" loading="lazy">
+                </div>
+                <div class="stagger-content">
+                    <div class="s-icon"><i data-lucide="zap"></i></div>
+                    <h3>Keratin Treatment</h3>
+                    <div class="s-meta"><span>120 - 180 Min</span> <span>From $250</span></div>
+                    <p>Eliminate frizz and restore brilliant shine with our long-lasting, formaldeyde-free keratin smoothing.</p>
+                    <button class="btn btn-outline s-book-btn">Book Now</button>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="stagger-card align-left">
+                <div class="stagger-img">
+                    <img src="images/service_bento_hair.png" alt="Smoothening" loading="lazy">
+                </div>
+                <div class="stagger-content">
+                    <div class="s-icon"><i data-lucide="sparkles"></i></div>
+                    <h3>Smoothening</h3>
+                    <div class="s-meta"><span>180 Min</span> <span>From $280</span></div>
+                    <p>Advanced rebonding and smoothening techniques for effortlessly straight, glossy hair.</p>
+                    <button class="btn btn-outline s-book-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION 3: SKIN & FACIAL (ZIG-ZAG)
+         ============================================== -->
+    <section class="zigzag-services reveal">
+        <div class="section-header center">
+            <span class="s-tag">Radiant Glow</span>
+            <h2>Skin & Facial Treatments</h2>
+        </div>
+
+        <div class="zigzag-container">
+            <!-- Row 1 -->
+            <div class="zz-row">
+                <div class="zz-image">
+                    <img src="images/service_bento_skin.png" alt="Classic Facial" loading="lazy">
+                </div>
+                <div class="zz-content">
+                    <h3>Classic Facial</h3>
+                    <div class="s-meta"><span>45 Min</span> <span>From $90</span></div>
+                    <p>A deeply relaxing treatment featuring cleansing, exfoliation, gentle extraction, and a custom mask.</p>
+                    <ul class="zz-benefits">
+                        <li><i data-lucide="check"></i> Improves circulation</li>
+                        <li><i data-lucide="check"></i> Clears congested pores</li>
+                    </ul>
+                    <a href="#" class="zz-link">Discover More <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="zz-row reverse">
+                <div class="zz-image">
+                    <img src="images/service_bento_spa.png" alt="Hydra Facial" loading="lazy">
+                </div>
+                <div class="zz-content">
+                    <h3>Hydra Facial</h3>
+                    <div class="s-meta"><span>60 Min</span> <span>From $150</span></div>
+                    <p>Advanced non-laser skin resurfacing that cleanses, extracts, and deeply hydrates.</p>
+                    <ul class="zz-benefits">
+                        <li><i data-lucide="check"></i> Instant radiant glow</li>
+                        <li><i data-lucide="check"></i> Plumps fine lines</li>
+                    </ul>
+                    <a href="#" class="zz-link">Discover More <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="zz-row">
+                <div class="zz-image">
+                    <!-- Adjusted existing asset to fit Anti-Ageing vibe -->
+                    <img src="images/service_bento_skin.png" alt="Anti-Ageing" style="filter: brightness(0.9) contrast(1.1);" loading="lazy">
+                </div>
+                <div class="zz-content">
+                    <h3>Anti-Ageing Therapy</h3>
+                    <div class="s-meta"><span>75 Min</span> <span>From $180</span></div>
+                    <p>Potent collagen-boosting serums and gold-roller massage to lift, firm, and rejuvenate mature skin.</p>
+                    <ul class="zz-benefits">
+                        <li><i data-lucide="check"></i> Reduces wrinkles</li>
+                        <li><i data-lucide="check"></i> Enhances elasticity</li>
+                    </ul>
+                    <a href="#" class="zz-link">Discover More <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="zz-row reverse">
+                <div class="zz-image">
+                    <img src="images/service_bento_makeup.png" alt="Brightening Treatment" style="object-position: bottom right;" loading="lazy">
+                </div>
+                <div class="zz-content">
+                    <h3>Brightening Treatment</h3>
+                    <div class="s-meta"><span>60 Min</span> <span>From $140</span></div>
+                    <p>Targeted vitamin-C therapies and natural fruit extracts to reduce pigmentation and dark spots.</p>
+                    <ul class="zz-benefits">
+                        <li><i data-lucide="check"></i> Evens skin tone</li>
+                        <li><i data-lucide="check"></i> Restores luminosity</li>
+                    </ul>
+                    <a href="#" class="zz-link">Discover More <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Row 5 -->
+            <div class="zz-row">
+                <div class="zz-image">
+                    <img src="images/expert_senior_stylist.png" alt="Skin Consultation" loading="lazy">
+                </div>
+                <div class="zz-content">
+                    <h3>Skin Consultation</h3>
+                    <div class="s-meta"><span>30 Min</span> <span>Complimentary</span></div>
+                    <p>In-depth digital analysis by our specialists to determine your exact skin type and tailored treatment plan.</p>
+                    <ul class="zz-benefits">
+                        <li><i data-lucide="check"></i> Personalized regime</li>
+                        <li><i data-lucide="check"></i> Expert product advice</li>
+                    </ul>
+                    <a href="#" class="zz-link">Discover More <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION 4: NAIL ART STUDIO (MASONRY)
+         ============================================== -->
+    <section class="nail-services reveal">
+        <div class="section-header center">
+            <span class="s-tag">Details Matter</span>
+            <h2>Nail Art & Studio</h2>
+        </div>
+        
+        <div class="masonry-grid">
+            <!-- Item 1 -->
+            <div class="masonry-item m-tall">
+                <img src="images/service_bento_nails.png" alt="Luxury Manicure" loading="lazy">
+                <div class="m-overlay">
+                    <div class="m-content">
+                        <h3>Luxury Manicure</h3>
+                        <div class="s-meta"><span>$45</span></div>
+                        <button class="btn btn-sm btn-outline s-book-btn">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="masonry-item m-wide">
+                <!-- Using another asset cropped for feet/pedicure vibe -->
+                <img src="images/service_bento_spa.png" alt="Spa Pedicure" loading="lazy">
+                <div class="m-overlay">
+                    <div class="m-content">
+                        <h3>Spa Pedicure</h3>
+                        <div class="s-meta"><span>$65</span></div>
+                        <button class="btn btn-sm btn-outline s-book-btn">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="masonry-item m-square">
+                <img src="images/service_bento_bridal.png" alt="Gel Polish" loading="lazy">
+                <div class="m-overlay">
+                    <div class="m-content">
+                        <h3>Gel Polish</h3>
+                        <div class="s-meta"><span>$30</span></div>
+                        <button class="btn btn-sm btn-outline s-book-btn">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="masonry-item m-square">
+                <img src="images/service_bento_makeup.png" alt="Nail Art" loading="lazy">
+                <div class="m-overlay">
+                    <div class="m-content">
+                        <h3>Custom Nail Art</h3>
+                        <div class="s-meta"><span>$20+</span></div>
+                        <button class="btn btn-sm btn-outline s-book-btn">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="masonry-item m-tall">
+                <img src="images/service_hair_colouring.png" alt="Extensions" style="filter: grayscale(40%);" loading="lazy">
+                <div class="m-overlay">
+                    <div class="m-content">
+                        <h3>Nail Extensions</h3>
+                        <div class="s-meta"><span>$85</span></div>
+                        <button class="btn btn-sm btn-outline s-book-btn">Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION 5: BRIDAL & MAKEUP (OVERSIZED)
+         ============================================== -->
+    <section class="bridal-services reveal">
+        <div class="section-header center">
+            <span class="s-tag">Your Special Day</span>
+            <h2>Bridal & Makeup Collection</h2>
+        </div>
+        
+        <div class="oversized-cards">
+            <!-- Card 1 -->
+            <div class="o-card">
+                <div class="o-image">
+                    <img src="images/package_bride_makeup.png" alt="Bridal Makeup" loading="lazy">
+                    <div class="o-ribbon">Premium</div>
+                </div>
+                <div class="o-content">
+                    <h3>Bridal Makeup</h3>
+                    <p>Flawless, long-lasting HD makeup paired with intricate hair styling for your wedding day.</p>
+                    <div class="s-meta"><span>From $350</span></div>
+                    <button class="btn btn-outline s-book-btn">View Packages</button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="o-card">
+                <div class="o-image">
+                    <img src="images/service_bento_bridal.png" alt="Engagement Makeup" loading="lazy">
+                    <div class="o-ribbon" style="background: var(--color-dark); color: white;">Popular</div>
+                </div>
+                <div class="o-content">
+                    <h3>Engagement Makeup</h3>
+                    <p>Elegant, photogenic styling ensuring you look stunning under all lighting conditions.</p>
+                    <div class="s-meta"><span>From $200</span></div>
+                    <button class="btn btn-outline s-book-btn">View Packages</button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="o-card">
+                <div class="o-image">
+                    <img src="images/service_bento_makeup.png" alt="Party Makeup" loading="lazy">
+                </div>
+                <div class="o-content">
+                    <h3>Party Makeup</h3>
+                    <p>Modern glam looks, soft curls, and expert contouring for special events and evenings out.</p>
+                    <div class="s-meta"><span>From $120</span></div>
+                    <button class="btn btn-outline s-book-btn">View Packages</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION 6: PRICING & FAQ (SPLIT)
+         ============================================== -->
+    <section class="pricing-faq-section reveal">
+        <div class="pf-background">
+            <img src="images/cta_reception_background.png" alt="Salon Background" loading="lazy">
+        </div>
+        
+        <div class="pf-container">
+            <!-- Left: Pricing -->
+            <div class="pf-pricing glass-panel">
+                <h3 class="pf-heading">Investment</h3>
+                <div class="pricing-table">
+                    <div class="pt-row">
+                        <div class="pt-info">
+                            <h4>Creative Cut & Blowdry</h4>
+                            <span>Recommended: Every 6-8 weeks</span>
+                        </div>
+                        <div class="pt-price">$85+</div>
+                    </div>
+                    <div class="pt-row">
+                        <div class="pt-info">
+                            <h4>Full Balayage</h4>
+                            <span>Recommended: Every 12 weeks</span>
+                        </div>
+                        <div class="pt-price">$180+</div>
+                    </div>
+                    <div class="pt-row">
+                        <div class="pt-info">
+                            <h4>Luxury Hydra Facial</h4>
+                            <span>Recommended: Monthly</span>
+                        </div>
+                        <div class="pt-price">$150+</div>
+                    </div>
+                    <div class="pt-row">
+                        <div class="pt-info">
+                            <h4>Bridal Trial Session</h4>
+                            <span>Recommended: 2 months prior</span>
+                        </div>
+                        <div class="pt-price">$120+</div>
+                    </div>
+                </div>
+                <button class="btn btn-primary magnetic" style="width: 100%; margin-top: 20px;">Download Full Menu</button>
+            </div>
+
+            <!-- Right: FAQ Accordion -->
+            <div class="pf-faq glass-panel">
+                <h3 class="pf-heading">Frequently Asked Questions</h3>
+                <div class="accordion">
+                    <div class="acc-item">
+                        <div class="acc-header">
+                            <h4>How long should I book in advance?</h4>
+                            <i data-lucide="plus"></i>
+                        </div>
+                        <div class="acc-content">
+                            <p>For standard services, we recommend booking 1-2 weeks in advance. For bridal and large packages, please book at least 3-6 months prior.</p>
+                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <div class="acc-header">
+                            <h4>Which facial suits sensitive skin?</h4>
+                            <i data-lucide="plus"></i>
+                        </div>
+                        <div class="acc-content">
+                            <p>Our Classic Facial and Hydra Facial can be completely customized with gentle, hypoallergenic serums perfect for sensitive skin types.</p>
+                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <div class="acc-header">
+                            <h4>Do you use organic products?</h4>
+                            <i data-lucide="plus"></i>
+                        </div>
+                        <div class="acc-content">
+                            <p>Yes, we prioritize premium, cruelty-free, and organic product lines across our hair coloring, spa, and skincare treatments.</p>
+                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <div class="acc-header">
+                            <h4>Are bridal trials included?</h4>
+                            <i data-lucide="plus"></i>
+                        </div>
+                        <div class="acc-content">
+                            <p>Bridal trials are included in our "Premium Bridal Journey" package. They can also be booked as a standalone service.</p>
+                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <div class="acc-header">
+                            <h4>How should I prepare before my appointment?</h4>
+                            <i data-lucide="plus"></i>
+                        </div>
+                        <div class="acc-content">
+                            <p>For color treatments, arrive with unwashed hair (1-2 days). For facials, please avoid retinol products 48 hours prior.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         FOOTER
+         ============================================== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo" style="margin-bottom: 20px; display: block;">
+                    <img src="images/luxe_aura_logo.png" alt="Luxe Aura Salon" style="height: 50px; object-fit: contain;">
+                </a>
+                <p>Where luxury meets unparalleled expertise. Elevating beauty standards with personalized care in a premium, relaxing environment.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">Hair Styling</a></li>
+                    <li><a href="services.html">Skin Care</a></li>
+                    <li><a href="services.html">Nail Art</a></li>
+                    <li><a href="services.html">Bridal Packages</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Contact Info</h4>
+                <ul style="color: rgba(255,255,255,0.7); font-size: 14px;">
+                    <li>123 Luxury Ave, NY</li>
+                    <li>+1 (555) 123-4567</li>
+                    <li>hello@luxeaura.com</li>
+                    <li style="margin-top: 15px; font-weight: bold; color: var(--color-white);">Business Hours</li>
+                    <li>Mon - Sat: 9AM - 8PM</li>
+                    <li>Sun: 10AM - 5PM</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luxe Aura Salon. All rights reserved.</p>
+            <p>Designed for Luxury.</p>
+        </div>
+    </footer>
+
+    <!-- JS Dependencies -->
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

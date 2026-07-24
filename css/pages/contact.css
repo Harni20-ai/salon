@@ -1,0 +1,248 @@
+/* ==============================================
+   CONTACT & APPOINTMENT PAGE
+   ============================================== */
+
+/* --- GENERAL --- */
+.contact-body {
+    background-color: var(--color-white);
+}
+
+/* --- SECTION 1: CONTACT HERO --- */
+.contact-hero {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    padding-top: var(--spacing-hero-top);
+    background: linear-gradient(135deg, #FBF9F7 0%, #FFFFFF 100%);
+    overflow: hidden;
+}
+
+.ch-curve {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none; z-index: 0;
+    opacity: 0; animation: fadeIn 1s forwards 1s;
+}
+
+.ch-container {
+    max-width: 1500px; margin: 0 auto; padding: 0 5%;
+    display: flex; align-items: center; min-height: 70vh; position: relative; z-index: 10;
+}
+
+.ch-info { flex: 1; max-width: 600px; }
+.ch-title { font-size: clamp(3rem, 4.5vw, 4.5rem); line-height: 1.1; color: var(--color-dark); margin-bottom: 25px; }
+.ch-desc { color: var(--color-grey); font-size: 18px; line-height: 1.6; margin-bottom: 40px; max-width: 90%; }
+.ch-btns { display: flex; gap: 20px; }
+
+/* Delay classes */
+.delay-1 { opacity: 0; animation: slideUpFade 0.8s forwards 0.2s; }
+.delay-2 { opacity: 0; animation: slideUpFade 0.8s forwards 0.4s; }
+.delay-3 { opacity: 0; animation: slideUpFade 0.8s forwards 0.6s; }
+.delay-4 { opacity: 0; animation: slideUpFade 0.8s forwards 0.8s; }
+.delay-5 { opacity: 0; animation: fadeIn 1.2s forwards 1s; }
+
+.ch-visual {
+    flex: 1; position: relative; height: 600px;
+    display: flex; justify-content: center; align-items: center;
+}
+.ch-img {
+    width: 80%; height: 90%; object-fit: cover; border-radius: 20px;
+    box-shadow: var(--shadow-medium); transition: transform 6s;
+}
+.ch-visual:hover .ch-img { transform: scale(1.02); }
+
+.ch-glass-card {
+    position: absolute; background: rgba(255,255,255,0.85); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.6); border-radius: 12px; padding: 15px 25px;
+    display: flex; align-items: center; gap: 15px; box-shadow: var(--shadow-soft);
+    animation: floatVertical 6s ease-in-out infinite; transition: transform 0.3s;
+}
+.ch-glass-card i { color: var(--color-primary); }
+.ch-glass-card strong { display: block; font-size: 14px; color: var(--color-dark); }
+.ch-glass-card span { font-size: 12px; color: var(--color-grey); }
+
+.gc-1 { top: 10%; left: 0; animation-delay: 0s; }
+.gc-2 { bottom: 20%; left: -5%; animation-delay: 1s; }
+.gc-3 { top: 40%; right: -5%; animation-delay: 2s; }
+
+
+/* --- SECTION 2: CONTACT INFO (DIAGONAL) --- */
+.contact-info-section { padding: 120px 0; background: linear-gradient(180deg, #FFFFFF 0%, #F8F3EF 100%); position: relative; overflow: hidden; }
+
+.ci-bg {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background-image: url('data:image/svg+xml;utf8,<svg opacity="0.03" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M10,90 Q50,10 90,90" fill="none" stroke="%23B76E79" stroke-width="2"/></svg>');
+    background-size: 300px;
+}
+
+.ci-container { max-width: 1400px; margin: 0 auto; position: relative; z-index: 10; height: 600px; }
+
+.diagonal-grid { position: relative; width: 100%; height: 100%; }
+
+.info-card {
+    position: absolute; width: 280px; background: var(--color-white);
+    padding: 40px 30px; border-radius: 16px; box-shadow: var(--shadow-soft);
+    text-align: center; transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.ic-icon {
+    width: 60px; height: 60px; margin: 0 auto 20px; border-radius: 50%;
+    background: var(--color-light); display: flex; justify-content: center; align-items: center;
+    color: var(--color-primary); transition: transform 0.4s;
+}
+.info-card h3 { font-size: 20px; margin-bottom: 10px; color: var(--color-dark); }
+.info-card p { font-size: 14px; color: var(--color-grey); line-height: 1.6; }
+
+/* Diagonal Placement */
+.c-1 { top: 0; left: 10%; }
+.c-2 { top: 20%; left: 35%; }
+.c-3 { top: 40%; left: 60%; }
+.c-4 { top: 60%; left: 85%; transform: translateX(-100%); }
+
+.info-card:hover { transform: translateY(-10px) !important; box-shadow: var(--shadow-medium); }
+.info-card:hover .ic-icon { transform: rotate(15deg) scale(1.1); }
+
+
+/* --- SECTION 3: APPOINTMENT BOOKING (SPLIT) --- */
+.booking-section { padding: 120px 5%; background: var(--color-white); }
+.book-container { max-width: 1400px; margin: 0 auto; display: flex; gap: 60px; }
+
+.book-form-wrapper { flex: 1.2; }
+.luxury-form { display: flex; flex-direction: column; gap: 30px; margin-top: 40px; }
+.form-row { display: flex; gap: 30px; }
+.input-group { position: relative; flex: 1; }
+
+.luxury-form input, .luxury-form select, .luxury-form textarea {
+    width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 15px 0; font-size: 16px; color: var(--color-dark); font-family: var(--font-body);
+    transition: border-color 0.3s;
+}
+.luxury-form select { appearance: none; cursor: pointer; }
+.select-icon { position: absolute; right: 0; top: 15px; color: var(--color-grey); pointer-events: none; }
+
+.luxury-form textarea { resize: vertical; min-height: 100px; }
+
+.luxury-form input:focus, .luxury-form select:focus, .luxury-form textarea:focus { outline: none; }
+
+/* Floating Labels */
+.luxury-form label {
+    position: absolute; top: 15px; left: 0; color: var(--color-grey); font-size: 16px;
+    pointer-events: none; transition: all 0.3s ease;
+}
+.luxury-form input:focus ~ label, .luxury-form textarea:focus ~ label,
+.luxury-form input:valid ~ label, .luxury-form textarea:valid ~ label, .active-label {
+    top: -10px; font-size: 12px; color: var(--color-primary); font-weight: bold;
+}
+/* Select always has floating label to avoid overlap with placeholder */
+.select-group label { top: -10px; font-size: 12px; color: var(--color-primary); font-weight: bold; }
+
+/* Animated Bottom Border */
+.input-border { position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--color-primary); transition: width 0.4s ease; }
+.luxury-form input:focus ~ .input-border, .luxury-form select:focus ~ .input-border, .luxury-form textarea:focus ~ .input-border { width: 100%; }
+
+.form-actions { display: flex; gap: 20px; margin-top: 20px; }
+
+.book-image-wrapper { flex: 1; position: relative; display: flex; justify-content: center; align-items: center; }
+.book-image-wrapper img { width: 90%; height: 90%; object-fit: cover; border-radius: 200px 200px 0 0; transition: transform 6s; }
+.b-glass-panel {
+    position: absolute; bottom: 10%; left: 0; width: 80%; height: 150px;
+    background: rgba(255,255,255,0.7); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
+    border-radius: 16px; border: 1px solid rgba(255,255,255,0.5); z-index: 2; transition: background 0.4s;
+}
+.book-image-wrapper:hover img { transform: scale(1.03); }
+.book-image-wrapper:hover .b-glass-panel { background: rgba(255,255,255,0.4); }
+
+
+/* --- SECTION 4: FIND OUR SALON --- */
+.find-salon { padding: 120px 5%; background: var(--color-light); }
+.fs-container { max-width: 1400px; margin: 0 auto; display: flex; gap: 60px; align-items: center; }
+
+.fs-map { flex: 1; height: 500px; border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-medium); }
+.fs-map iframe { filter: grayscale(100%) contrast(1.2); transition: filter 0.4s; }
+.fs-map:hover iframe { filter: grayscale(50%) contrast(1.1); }
+
+.fs-content { flex: 1; padding-left: 20px; }
+.fs-content h2 { font-size: 40px; margin-bottom: 30px; font-family: var(--font-heading); }
+.fs-image { width: 100%; height: 200px; border-radius: 12px; overflow: hidden; margin-bottom: 30px; }
+.fs-image img { width: 100%; height: 100%; object-fit: cover; transition: filter 0.4s; }
+.fs-content:hover .fs-image img { filter: sepia(0) !important; }
+
+.fs-details { list-style: none; padding: 0; }
+.fs-details li { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; font-size: 16px; color: var(--color-dark); }
+.fs-details i { color: var(--color-primary); width: 24px; }
+
+
+/* --- SECTION 5: FAQ (ACCORDION) --- */
+.faq-section { padding: 120px 5%; background: var(--color-white); }
+.faq-container { max-width: 1400px; margin: 0 auto; display: flex; gap: 60px; align-items: center; }
+
+.faq-illustration { flex: 1; position: relative; animation: floatVertical 8s ease-in-out infinite; }
+.faq-illustration img { width: 100%; height: 600px; object-fit: cover; border-radius: 24px; transition: transform 0.6s; }
+.faq-illustration:hover img { transform: scale(1.02); }
+
+.faq-content { flex: 1; }
+.faq-content h2 { font-size: 40px; margin-bottom: 40px; font-family: var(--font-heading); }
+
+.contact-accordion { display: flex; flex-direction: column; gap: 15px; }
+.c-acc-item { border-bottom: 1px solid rgba(0,0,0,0.1); overflow: hidden; }
+.c-acc-header { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; cursor: pointer; }
+.c-acc-header h4 { font-size: 18px; margin: 0; transition: color 0.3s; }
+.c-acc-header i { transition: transform 0.4s; color: var(--color-primary); }
+
+.c-acc-item.active .c-acc-header h4 { color: var(--color-primary); }
+.c-acc-item.active .c-acc-header i { transform: rotate(45deg); }
+
+.c-acc-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; }
+.c-acc-item.active .c-acc-body { max-height: 200px; padding-bottom: 20px; }
+.c-acc-body p { color: var(--color-grey); line-height: 1.6; }
+
+
+/* --- SECTION 6: FINAL LUXURY CTA --- */
+.final-cta { padding: 100px 5%; max-width: 1600px; margin: 0 auto; }
+.fcta-banner {
+    position: relative; width: 100%; height: 500px; border-radius: 40px 40px 0 0;
+    overflow: hidden; display: flex; justify-content: center; align-items: center;
+}
+
+.fcta-bg {
+    position: absolute; top: 0; left: 0; width: 120%; height: 100%;
+    background-image: url('../images/cta_reception_background.png'); background-size: cover; background-position: center;
+    animation: panBanner 18s linear infinite alternate; filter: brightness(0.6) sepia(20%); transition: transform 0.6s;
+}
+@keyframes panBanner { to { transform: translateX(-10%); } }
+
+.fcta-content { position: relative; z-index: 10; text-align: center; color: var(--color-white); max-width: 800px; }
+.fcta-content h2 { font-size: 48px; font-family: var(--font-heading); margin-bottom: 20px; transition: text-shadow 0.4s; }
+.fcta-content p { font-size: 18px; opacity: 0.9; margin-bottom: 40px; }
+.fcta-btns { display: flex; justify-content: center; gap: 20px; }
+.fcta-btns .btn { transition: transform 0.4s; }
+
+.fcta-banner:hover .fcta-bg { transform: scale(1.05); }
+.fcta-banner:hover .fcta-content h2 { text-shadow: 0 0 20px rgba(255,255,255,0.5); }
+.fcta-banner:hover .fcta-btns .btn { transform: translateY(-5px); }
+
+#golden-particles { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 5; }
+
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 1024px) {
+    .ch-container { flex-direction: column; text-align: center; padding-top: 100px; gap: 50px; }
+    .ch-visual { width: 100%; height: 400px; }
+    .ch-btns { justify-content: center; }
+    
+    .ci-container { height: auto; padding: 40px 0; }
+    .diagonal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; position: static; }
+    .info-card { position: static; width: 100%; transform: none !important; }
+    
+    .book-container { flex-direction: column; }
+    .form-row { flex-direction: column; gap: 0; }
+    .book-image-wrapper img { border-radius: 16px; }
+    
+    .fs-container { flex-direction: column; }
+    .order-1 { order: 1; } .order-2 { order: 2; width: 100%; }
+    
+    .faq-container { flex-direction: column; }
+}
+
+@media (max-width: 768px) {
+    .diagonal-grid { grid-template-columns: 1fr; padding: 0 5%; }
+    .fcta-content h2 { font-size: 32px; }
+}

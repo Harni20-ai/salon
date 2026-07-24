@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxe Aura Salon - Experience Luxury Beauty That Reflects Your Confidence. Premium hair, skin, and nail services by expert stylists.">
+    <title>Luxe Aura Salon | Premium Beauty & Hair Studio</title>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- CSS Dependencies -->
+    <link rel="stylesheet" href="css/utilities/variables.css">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/typography.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/cards.css">
+    <link rel="stylesheet" href="css/layout/navigation.css">
+    <link rel="stylesheet" href="css/layout/footer.css">
+    <link rel="stylesheet" href="css/pages/home1.css">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Luxury Salon, Hair Styling, Beauty Parlour, Bridal Makeup, Skin Care, Luxe Aura">
+    <meta name="author" content="Luxe Aura Salon">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://luxeaura.com/index.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://luxeaura.com/index.html">
+    <meta property="og:title" content="Luxe Aura Salon | Premium Beauty & Hair Studio">
+    <meta property="og:description" content="Where luxury meets unparalleled expertise. Elevating beauty standards with personalized care.">
+    <meta property="og:image" content="https://luxeaura.com/images/cta_reception_background.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://luxeaura.com/index.html">
+    <meta property="twitter:title" content="Luxe Aura Salon | Premium Beauty & Hair Studio">
+    <meta property="twitter:description" content="Where luxury meets unparalleled expertise. Elevating beauty standards with personalized care.">
+    <meta property="twitter:image" content="https://luxeaura.com/images/cta_reception_background.png">
+
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Luxe Aura Salon",
+      "url": "https://luxeaura.com/"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "Luxe Aura Salon",
+      "image": "https://luxeaura.com/images/luxe_aura_logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Luxury Ave",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10021",
+        "addressCountry": "US"
+      },
+      "telephone": "+15551234567",
+      "priceRange": "$$"
+    }
+    </script>
+
+</head>
+<body>
+    <!-- ==============================================
+         LOADING EXPERIENCE
+         ============================================== -->
+    <div id="loader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--color-light); z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity var(--transition-slow); pointer-events: none;">
+        <img src="images/luxe_aura_logo.png" alt="Luxe Aura Salon" style="height: 80px; opacity: 0; transition: opacity 0.8s ease;">
+    </div>
+
+    <!-- ==============================================
+         NAVIGATION
+         ============================================== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/luxe_aura_logo.png" alt="Luxe Aura Salon" style="height: 60px; object-fit: contain;">
+            </a>
+            
+            <ul class="nav-links">
+                <li class="nav-item active">Home
+                    <div class="dropdown-menu">
+                        <a href="index.html" class="dropdown-item">Home 1</a>
+                        <a href="#" class="dropdown-item">Home 2</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#">Services</a></li>
+                <li class="nav-item"><a href="#">Gallery</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button class="btn btn-primary btn-sm magnetic" style="padding: 10px 20px; font-size: 13px;">Book Appointment</button>
+                <button class="control-btn dir-btn" title="Toggle LTR/RTL">
+                    <span style="font-size: 12px; font-weight: bold;">RTL</span>
+                </button>
+                <button class="control-btn dark-mode-btn" title="Toggle Dark Mode">
+                    <i data-lucide="moon"></i>
+                </button>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </div>
+            </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==============================================
+         SECTION 1: CINEMATIC HERO
+         ============================================== -->
+    <section class="hero-section cinematic-hero">
+        <div class="hero-container split-layout">
+            <div class="hero-text-content">
+                <h1 class="stagger-heading">
+                    <span class="line1">Luxury Beauty</span>
+                    <br><span class="line2">Crafted Around</span>
+                    <br><span class="line3 type-reveal">You</span>
+                </h1>
+                <p class="hero-paragraph">Welcome to Luxe Aura, where precision hair styling meets advanced skincare and bridal transformations. Our experienced professionals deliver personalised beauty experiences in a relaxing atmosphere designed around you. Indulge in premium treatments that reflect your confidence and elevate your natural elegance.</p>
+                
+                <div class="hero-btns">
+                    <button class="btn btn-primary magnetic primary-btn">Book Appointment <i data-lucide="arrow-right"></i></button>
+                    <button class="btn btn-outline magnetic secondary-btn">Explore Services</button>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="images/hero_editorial_salon.png" alt="Luxury Salon Stylist" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION 2: PREMIUM SERVICES (Bento Grid)
+         ============================================== -->
+    <section class="services-section reveal">
+        <div class="section-header">
+            <h2 class="subheading">Our Expertise</h2>
+            <h2>Premium Services</h2>
+        </div>
+        
+        <div class="bento-grid">
+            <!-- Large Hair Card -->
+            <div class="bento-item large-card">
+                <img src="images/service_bento_hair.png" alt="Hair Styling" loading="lazy">
+                <div class="bento-content">
+                    <div class="bento-icon"><i data-lucide="scissors"></i></div>
+                    <h3>Precision Hair Styling</h3>
+                    <p>Expert cuts, coloring, and styling.</p>
+                    <div class="bento-meta">
+                        <span>From $85</span>
+                        <span>60 Min</span>
+                    </div>
+                    <a href="#" class="bento-link">Learn More <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Medium Skin Card -->
+            <div class="bento-item medium-card">
+                <img src="images/service_bento_skin.png" alt="Skin Care" loading="lazy">
+                <div class="bento-content">
+                    <div class="bento-icon"><i data-lucide="sparkles"></i></div>
+                    <h3>Hydra Facial</h3>
+                    <p>Deep cleansing & hydration.</p>
+                    <div class="bento-meta"><span>From $120</span></div>
+                    <a href="#" class="bento-link">Learn More <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Medium Nails Card -->
+            <div class="bento-item medium-card">
+                <img src="images/service_bento_nails.png" alt="Nail Studio" loading="lazy">
+                <div class="bento-content">
+                    <div class="bento-icon"><i data-lucide="smile"></i></div>
+                    <h3>Nail Studio</h3>
+                    <p>Luxury manicures & nail art.</p>
+                    <div class="bento-meta"><span>From $55</span></div>
+                    <a href="#" class="bento-link">Learn More <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Large Bridal Card -->
+            <div class="bento-item large-card">
+                <img src="images/service_bento_bridal.png" alt="Bridal Makeup" loading="lazy">
+                <div class="bento-content">
+                    <div class="bento-icon"><i data-lucide="heart"></i></div>
+                    <h3>Bridal Makeup</h3>
+                    <p>Bespoke bridal transformations for your special day.</p>
+                    <div class="bento-meta">
+                        <span>From $250</span>
+                        <span>120 Min</span>
+                    </div>
+                    <a href="#" class="bento-link">Learn More <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Medium Spa Card -->
+            <div class="bento-item medium-card">
+                <img src="images/service_bento_spa.png" alt="Spa Retreat" loading="lazy">
+                <div class="bento-content">
+                    <div class="bento-icon"><i data-lucide="wind"></i></div>
+                    <h3>Spa Retreat</h3>
+                    <p>Relaxing massage therapies.</p>
+                    <div class="bento-meta"><span>From $110</span></div>
+                    <a href="#" class="bento-link">Learn More <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Medium Makeup Card -->
+            <div class="bento-item medium-card">
+                <img src="images/service_bento_makeup.png" alt="Pro Makeup" loading="lazy">
+                <div class="bento-content">
+                    <div class="bento-icon"><i data-lucide="star"></i></div>
+                    <h3>Pro Makeup</h3>
+                    <p>High-end cosmetic applications.</p>
+                    <div class="bento-meta"><span>From $90</span></div>
+                    <a href="#" class="bento-link">Learn More <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION 3: MEET OUR EXPERTS
+         ============================================== -->
+    <section class="experts-section reveal">
+        <div class="section-header">
+            <h2 class="subheading">Master Artists</h2>
+            <h2>Meet Our Experts</h2>
+        </div>
+        
+        <div class="experts-grid">
+            <div class="expert-portrait-card">
+                <img src="images/expert_senior_stylist.png" alt="Hair Expert" loading="lazy">
+                <div class="expert-overlay">
+                    <h3 class="expert-name">Elena Rose</h3>
+                    <p class="expert-role">Hair Expert</p>
+                    <div class="expert-socials">
+                        <i data-lucide="instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="expert-portrait-card">
+                <img src="images/service_bento_makeup.png" alt="Bridal Specialist" loading="lazy">
+                <div class="expert-overlay">
+                    <h3 class="expert-name">Sarah Chen</h3>
+                    <p class="expert-role">Bridal Specialist</p>
+                    <div class="expert-socials">
+                        <i data-lucide="instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="expert-portrait-card">
+                <img src="images/service_bento_skin.png" alt="Skin Therapist" loading="lazy">
+                <div class="expert-overlay">
+                    <h3 class="expert-name">Aisha Patel</h3>
+                    <p class="expert-role">Skin Therapist</p>
+                    <div class="expert-socials">
+                        <i data-lucide="instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="expert-portrait-card">
+                <img src="images/service_bento_nails.png" alt="Nail Artist" loading="lazy">
+                <div class="expert-overlay">
+                    <h3 class="expert-name">Mia Johnson</h3>
+                    <p class="expert-role">Nail Artist</p>
+                    <div class="expert-socials">
+                        <i data-lucide="instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION 4: SIGNATURE PACKAGES
+         ============================================== -->
+    <section class="packages-section reveal">
+        <div class="section-header">
+            <h2 class="subheading">Curated Experiences</h2>
+            <h2>Signature Packages</h2>
+        </div>
+        
+        <div class="pricing-grid">
+            <div class="pricing-card" style="background-image: url('images/package_bride_makeup.png');">
+                <div class="pricing-overlay"></div>
+                <div class="pricing-content">
+                    <div class="ribbon">Best Value</div>
+                    <h3>Bridal Package</h3>
+                    <div class="price"><span>$</span><span class="count-up" data-target="450">0</span></div>
+                    <ul class="pricing-features">
+                        <li>Hair Styling</li>
+                        <li>HD Makeup</li>
+                        <li>Draping</li>
+                    </ul>
+                    <button class="btn btn-outline">Select Package</button>
+                </div>
+            </div>
+            <div class="pricing-card" style="background-image: url('images/service_bento_hair.png');">
+                <div class="pricing-overlay"></div>
+                <div class="pricing-content">
+                    <h3>Hair Transformation</h3>
+                    <div class="price"><span>$</span><span class="count-up" data-target="220">0</span></div>
+                    <ul class="pricing-features">
+                        <li>Creative Colour</li>
+                        <li>Olaplex Treatment</li>
+                        <li>Restyle Cut</li>
+                    </ul>
+                    <button class="btn btn-outline">Select Package</button>
+                </div>
+            </div>
+            <div class="pricing-card" style="background-image: url('images/service_bento_skin.png');">
+                <div class="pricing-overlay"></div>
+                <div class="pricing-content">
+                    <h3>Skin Glow</h3>
+                    <div class="price"><span>$</span><span class="count-up" data-target="180">0</span></div>
+                    <ul class="pricing-features">
+                        <li>Hydra Facial</li>
+                        <li>LED Therapy</li>
+                        <li>Collagen Mask</li>
+                    </ul>
+                    <button class="btn btn-outline">Select Package</button>
+                </div>
+            </div>
+            <div class="pricing-card" style="background-image: url('images/service_bento_spa.png');">
+                <div class="pricing-overlay"></div>
+                <div class="pricing-content">
+                    <h3>Spa Retreat</h3>
+                    <div class="price"><span>$</span><span class="count-up" data-target="150">0</span></div>
+                    <ul class="pricing-features">
+                        <li>Aromatherapy</li>
+                        <li>Shoulder Massage</li>
+                        <li>Hot Towel</li>
+                    </ul>
+                    <button class="btn btn-outline">Select Package</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION 5: TESTIMONIALS
+         ============================================== -->
+    <section class="testimonials-section reveal">
+        <div class="section-header">
+            <h2 class="subheading">Client Love</h2>
+            <h2>What They Say</h2>
+        </div>
+        
+        <div class="testimonial-carousel">
+            <div class="testimonial-track">
+                <div class="testimonial-slide active">
+                    <i data-lucide="quote" class="quote-icon"></i>
+                    <img src="images/service_bento_bridal.png" alt="Client" class="client-img" loading="lazy">
+                    <p class="review-text">"Absolutely breathtaking experience! The bridal team made me feel like royalty. Highly recommend their bespoke packages."</p>
+                    <div class="client-name">Emily S.</div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="testimonial-slide">
+                    <i data-lucide="quote" class="quote-icon"></i>
+                    <img src="images/hero_editorial_salon.png" alt="Client" class="client-img">
+                    <p class="review-text">"The precision hair styling here is unmatched. The atmosphere is so relaxing, it truly feels like a premium retreat."</p>
+                    <div class="client-name">Jessica W.</div>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION 6: LUXURY BOOKING CTA
+         ============================================== -->
+    <section class="booking-cta-section reveal">
+        <div class="booking-banner" style="background-image: url('images/cta_reception_background.png');">
+            <div class="banner-content">
+                <h2>Your Beauty Journey Starts Here</h2>
+                <p>Schedule a consultation and experience personalised beauty services tailored exclusively for you.</p>
+                <div class="banner-btns">
+                    <button class="btn btn-primary magnetic">Book Appointment</button>
+                    <button class="btn btn-outline magnetic" style="color: white; border-color: white;">Call Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         FOOTER
+         ============================================== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo" style="margin-bottom: 20px; display: block;">
+                    <img src="images/luxe_aura_logo.png" alt="Luxe Aura Salon" style="height: 50px; object-fit: contain;">
+                </a>
+                <p>Where luxury meets unparalleled expertise. Elevating beauty standards with personalized care in a premium, relaxing environment.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Hair Styling</a></li>
+                    <li><a href="#">Skin Care</a></li>
+                    <li><a href="#">Nail Art</a></li>
+                    <li><a href="#">Bridal Packages</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Contact Info</h4>
+                <ul style="color: rgba(255,255,255,0.7); font-size: 14px;">
+                    <li>123 Luxury Ave, NY</li>
+                    <li>+1 (555) 123-4567</li>
+                    <li>hello@luxeaura.com</li>
+                    <li style="margin-top: 15px; font-weight: bold; color: var(--color-white);">Business Hours</li>
+                    <li>Mon - Sat: 9AM - 8PM</li>
+                    <li>Sun: 10AM - 5PM</li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h4>Join Our Newsletter</h4>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 15px;">Subscribe for exclusive luxury offers and beauty tips.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-btn"><i data-lucide="send" style="width: 18px;"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luxe Aura Salon. All rights reserved.</p>
+            <p>Designed for Luxury.</p>
+        </div>
+    </footer>
+
+    <!-- JS Dependencies -->
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
