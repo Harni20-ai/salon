@@ -23,6 +23,11 @@
     transform: scale(0.96) !important;
 }
 
+.btn-sm {
+    padding: 10px 20px !important;
+    font-size: 13px !important;
+}
+
 .btn-primary {
     background: var(--color-primary);
     color: var(--color-white);

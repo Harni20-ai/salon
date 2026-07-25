@@ -1,479 +1,305 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Book an appointment with Luxe Aura Salon. The finest luxury beauty experience awaits.">
-    <title>Contact & Appointment | Luxe Aura Salon</title>
-
-    <!-- Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Contact Us | Aura Premium Salon</title>
     
-    <!-- CSS Dependencies -->
-    <link rel="stylesheet" href="css/utilities/variables.css">
-    <link rel="stylesheet" href="css/base/reset.css">
-    <link rel="stylesheet" href="css/base/typography.css">
-    <link rel="stylesheet" href="css/components/buttons.css">
-    <link rel="stylesheet" href="css/components/cards.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/layout/navigation.css">
     <link rel="stylesheet" href="css/layout/footer.css">
+    
+    <!-- Page CSS -->
     <link rel="stylesheet" href="css/pages/contact.css">
-
-    <!-- SEO Meta Tags -->
-    <meta name="keywords" content="Luxury Salon, Hair Styling, Beauty Parlour, Bridal Makeup, Skin Care, Luxe Aura">
-    <meta name="author" content="Luxe Aura Salon">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://luxeaura.com/contact.html">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://luxeaura.com/contact.html">
-    <meta property="og:title" content="Contact & Appointment | Luxe Aura Salon">
-    <meta property="og:description" content="Where luxury meets unparalleled expertise. Elevating beauty standards with personalized care.">
-    <meta property="og:image" content="https://luxeaura.com/images/cta_reception_background.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://luxeaura.com/contact.html">
-    <meta property="twitter:title" content="Contact & Appointment | Luxe Aura Salon">
-    <meta property="twitter:description" content="Where luxury meets unparalleled expertise. Elevating beauty standards with personalized care.">
-    <meta property="twitter:image" content="https://luxeaura.com/images/cta_reception_background.png">
-
-    
-    <!-- Schema.org -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Luxe Aura Salon",
-      "url": "https://luxeaura.com/"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BeautySalon",
-      "name": "Luxe Aura Salon",
-      "image": "https://luxeaura.com/images/luxe_aura_logo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "123 Luxury Ave",
-        "addressLocality": "New York",
-        "addressRegion": "NY",
-        "postalCode": "10021",
-        "addressCountry": "US"
-      },
-      "telephone": "+15551234567",
-      "priceRange": "$$"
-    }
-    </script>
-
 </head>
-<body class="contact-body">
-    <!-- ==============================================
-         LOADING EXPERIENCE
-         ============================================== -->
-    <div id="loader">
-        <img src="images/luxe_aura_logo.png" alt="Luxe Aura Salon" style="height: 80px; opacity: 0; transition: opacity 0.8s ease;">
-    </div>
+<body>
 
-    <!-- ==============================================
-         NAVIGATION
-         ============================================== -->
-    <nav class="navbar">
+    <!-- Header / Navigation -->
+            <header>
         <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="images/luxe_aura_logo.png" alt="Luxe Aura Salon" style="height: 60px; object-fit: contain;">
+            <a href="index.html" class="nav-logo">
+                <i class="ph ph-sparkle"></i>
+                Aura<span>.</span>
             </a>
             
-            <ul class="nav-links">
-                <li class="nav-item">Home
-                    <div class="dropdown-menu">
-                        <a href="index.html" class="dropdown-item">Home 1</a>
-                        <a href="home-2.html" class="dropdown-item">Home 2</a>
+            <nav class="nav-links">
+                <div class="has-dropdown">
+                    <a href="index.html" class="nav-link ">Home <i class="ph ph-caret-down" style="font-size: 0.8em; margin-left: 4px;"></i></a>
+                    <div class="dropdown">
+                        <a href="index.html">Home 1</a>
+                        <a href="home-2.html">Home 2</a>
                     </div>
-                </li>
-                <li class="nav-item"><a href="services.html">Services</a></li>
-                <li class="nav-item"><a href="gallery.html">Gallery</a></li>
-                <li class="nav-item"><a href="about.html">About</a></li>
-                <li class="nav-item active"><a href="contact.html">Contact</a></li>
-            </ul>
-
-            <div class="nav-controls">
-                <button class="btn btn-primary btn-sm magnetic nav-book-btn">Book Appointment</button>
-                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-                    <span></span><span></span><span></span>
                 </div>
+                <a href="about.html" class="nav-link ">About</a>
+                <a href="services.html" class="nav-link ">Services</a>
+                <a href="team.html" class="nav-link ">Our Team</a>
+                <a href="gallery.html" class="nav-link ">Gallery</a>
+                <a href="pricing.html" class="nav-link ">Pricing</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                
+                <div class="nav-actions mobile-only" style="display: none;">
+                    <a href="contact.html" class="btn btn-cta">BOOK APPOINTMENT</a>
+                    <button class="action-btn rtl-toggle rtl-toggle-mobile">LTR</button>
+                    <button class="action-btn theme-toggle theme-toggle-mobile"><i class="ph ph-moon"></i></button>
+                </div>
+            </nav>
+            
+            <div class="nav-actions desktop-only">
+                <a href="contact.html" class="btn btn-cta">BOOK APPOINTMENT</a>
+                <button class="action-btn rtl-toggle">LTR</button>
+                <button class="action-btn theme-toggle"><i class="ph ph-moon"></i></button>
+            </div>
+            
+            <button class="menu-toggle action-btn">
+                <i class="ph ph-list"></i>
             </button>
-            </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- ==============================================
-         SECTION 1: CONTACT HERO
-         ============================================== -->
-    <section class="contact-hero">
-        <!-- Curved Background Line -->
-        <svg class="ch-curve" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path d="M0,100 C30,40 70,20 100,50" fill="transparent" stroke="rgba(183,110,121,0.4)" stroke-width="0.5" stroke-linecap="round"/>
-        </svg>
-
-        <div class="ch-container">
-            <!-- Left Info -->
-            <div class="ch-info">
-                <span class="s-tag delay-1">Concierge Service</span>
-                <h1 class="ch-title delay-2">Let's Create Your <br><span class="highlight">Perfect Beauty</span> Experience</h1>
-                <p class="ch-desc delay-3">We invite you to step into our world of luxury. Schedule a bespoke consultation, reserve your signature beauty treatment, or discuss personalized bridal services with our expert professionals.</p>
-                
-                <div class="ch-btns delay-4">
-                    <a href="#booking" class="btn btn-primary magnetic glow-hover">Book Appointment</a>
-                    <button class="btn btn-outline magnetic">Call Now</button>
-                </div>
+    <main>
+        <!-- Section 1: Hero (Floating Text Block) -->
+        <section class="hero-floating">
+            <div class="hero-float-card">
+                <h1>Get in Touch</h1>
+                <p>Reserve your moment of luxury.</p>
             </div>
+        </section>
 
-            <!-- Right Image & Cards -->
-            <div class="ch-visual delay-5">
-                <img src="images/cta_reception_background.png" alt="Luxury Salon Reception" class="ch-img" loading="lazy">
-                
-                <!-- Floating Glass Cards -->
-                <div class="ch-glass-card gc-1 tilt-card">
-                    <i data-lucide="sun"></i>
-                    <div>
-                        <strong>Open Today</strong>
-                        <span>9:00 AM - 8:00 PM</span>
-                    </div>
-                </div>
-                
-                <div class="ch-glass-card gc-2 tilt-card">
-                    <i data-lucide="phone-call"></i>
-                    <div>
-                        <strong>Call Anytime</strong>
-                        <span>Dedicated Support</span>
-                    </div>
-                </div>
-                
-                <div class="ch-glass-card gc-3 tilt-card">
-                    <i data-lucide="calendar-check"></i>
-                    <div>
-                        <strong>Instant Booking</strong>
-                        <span>Reserve Securely</span>
+        <!-- Section 2: Overlapping Map Layout -->
+        <section class="section map-section">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.757876800043!2d-118.4022830847844!3d34.07572708059881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc04d6d147ab%3A0x6b44c688d0b50302!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1628185587747!5m2!1sen!2sus" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="map-card">
+                    <h3>Aura Beverly Hills</h3>
+                    <p>123 Luxury Avenue<br>Beverly Hills, CA 90210</p>
+                    <div class="map-info">
+                        <i class="ph ph-car"></i> Valet Parking Available
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ==============================================
-         SECTION 2: CONTACT INFORMATION (DIAGONAL)
-         ============================================== -->
-    <section class="contact-info-section reveal">
-        <div class="ci-container">
-            <!-- Background Botanicals -->
-            <div class="ci-bg"></div>
-
-            <div class="diagonal-grid">
-                <!-- Card 1 -->
-                <div class="info-card c-1 tilt-card">
-                    <div class="ic-icon"><i data-lucide="map-pin"></i></div>
-                    <h3>Visit Us</h3>
-                    <p>123 Luxury Avenue<br>Upper East Side<br>New York, NY 10021</p>
-                </div>
-                
-                <!-- Card 2 -->
-                <div class="info-card c-2 tilt-card">
-                    <div class="ic-icon"><i data-lucide="phone"></i></div>
-                    <h3>Call Us</h3>
-                    <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="info-card c-3 tilt-card">
-                    <div class="ic-icon"><i data-lucide="mail"></i></div>
-                    <h3>Email</h3>
-                    <p>concierge@luxeaura.com<br>careers@luxeaura.com</p>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="info-card c-4 tilt-card">
-                    <div class="ic-icon"><i data-lucide="clock"></i></div>
-                    <h3>Opening Hours</h3>
-                    <p>Mon-Sat: 9AM - 8PM<br>Sun: 10AM - 5PM<br><span style="color:var(--color-primary); font-size:12px;">Closed on Public Holidays</span></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==============================================
-         SECTION 3: APPOINTMENT BOOKING (SPLIT)
-         ============================================== -->
-    <section id="booking" class="booking-section reveal">
-        <div class="book-container">
-            <!-- Left Form -->
-            <div class="book-form-wrapper">
-                <div class="section-header">
-                    <h2>Reserve Your <br><span class="highlight">Appointment</span></h2>
-                    <p style="color: var(--color-grey); margin-top: 10px;">Fill out the details below and our concierge will confirm your slot.</p>
-                </div>
-
-                <form class="luxury-form">
-                    <div class="form-row">
-                        <div class="input-group">
-                            <input type="text" id="fname" required>
-                            <label for="fname">Full Name</label>
-                            <div class="input-border"></div>
-                        </div>
-                        <div class="input-group">
-                            <input type="tel" id="phone" required>
-                            <label for="phone">Mobile Number</label>
-                            <div class="input-border"></div>
-                        </div>
+        <!-- Section 3: Clean Centered Booking Form -->
+        <section class="section form-section">
+            <div class="container">
+                <div class="form-wrapper">
+                    <div class="section-header text-center">
+                        <h2>Book an Appointment</h2>
+                        <p>Fill out the form below and our concierge will contact you to confirm.</p>
                     </div>
                     
-                    <div class="input-group">
-                        <input type="email" id="email" required>
-                        <label for="email">Email Address</label>
-                        <div class="input-border"></div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="input-group select-group">
-                            <select id="service" required>
-                                <option value="" disabled selected></option>
-                                <option value="hair">Hair Styling & Colour</option>
-                                <option value="skin">Skin & Facial Therapy</option>
-                                <option value="nails">Nail Art Studio</option>
-                                <option value="bridal">Bridal Makeover</option>
-                            </select>
-                            <label for="service">Preferred Service</label>
-                            <i data-lucide="chevron-down" class="select-icon"></i>
-                            <div class="input-border"></div>
+                    <form class="booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="Eleanor Vance" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="(310) 555-0199" required>
+                            </div>
                         </div>
-                        <div class="input-group select-group">
-                            <select id="stylist">
-                                <option value="" disabled selected></option>
-                                <option value="any">Any Available</option>
-                                <option value="isabella">Isabella Stone</option>
-                                <option value="elena">Elena Rossi</option>
-                            </select>
-                            <label for="stylist">Preferred Stylist (Optional)</label>
-                            <i data-lucide="chevron-down" class="select-icon"></i>
-                            <div class="input-border"></div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="eleanor@example.com" required>
                         </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="input-group">
-                            <input type="date" id="date" required>
-                            <label for="date" class="active-label">Preferred Date</label>
-                            <div class="input-border"></div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service">Service Category</label>
+                                <select id="service" required>
+                                    <option value="" disabled selected>Select a Service...</option>
+                                    <option value="hair">Hair Artistry</option>
+                                    <option value="skin">Skin Rejuvenation</option>
+                                    <option value="nails">Nail Couture</option>
+                                    <option value="spa">Spa Retreat</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="stylist">Preferred Stylist (Optional)</label>
+                                <select id="stylist">
+                                    <option value="" selected>No Preference</option>
+                                    <option value="clara">Clara Hughes</option>
+                                    <option value="julian">Julian Ford</option>
+                                    <option value="emma">Emma Frost</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="input-group">
-                            <input type="time" id="time" required>
-                            <label for="time" class="active-label">Preferred Time</label>
-                            <div class="input-border"></div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" id="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time</label>
+                                <select id="time" required>
+                                    <option value="" disabled selected>Select Time...</option>
+                                    <option value="morning">Morning (9AM - 12PM)</option>
+                                    <option value="afternoon">Afternoon (12PM - 4PM)</option>
+                                    <option value="evening">Evening (4PM - 8PM)</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="input-group">
-                        <textarea id="notes" rows="3" required></textarea>
-                        <label for="notes">Additional Notes</label>
-                        <div class="input-border"></div>
-                    </div>
-
-                    <div class="form-actions">
-                        <button type="submit" class="btn btn-primary submit-btn ripple-btn">Book Appointment</button>
-                        <button type="button" class="btn btn-outline">Request Consultation</button>
-                    </div>
-                </form>
-            </div>
-
-            <!-- Right Image -->
-            <div class="book-image-wrapper">
-                <div class="b-glass-panel"></div>
-                <img src="images/expert_senior_stylist.png" alt="Stylist Consultation" loading="lazy">
-            </div>
-        </div>
-    </section>
-
-    <!-- ==============================================
-         SECTION 4: FIND OUR SALON
-         ============================================== -->
-    <section class="find-salon reveal">
-        <div class="fs-container">
-            <!-- Left Map -->
-            <div class="fs-map order-2">
-                <!-- Using an iframe placeholder for Google Maps -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1!2d-73.9!3d40.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzAwLjAiTiA3M8KwNTQnMDAuMCJX!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-
-            <!-- Right Content -->
-            <div class="fs-content order-1">
-                <h2>Our <span class="highlight">Location</span></h2>
-                <div class="fs-image">
-                    <img src="images/hero_editorial_salon.png" alt="Salon Exterior" style="filter: sepia(20%);">
+                        <div class="form-group">
+                            <label for="notes">Additional Notes</label>
+                            <textarea id="notes" rows="4" placeholder="Any specific requirements or conditions..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Submit Request</button>
+                    </form>
                 </div>
-                
-                <ul class="fs-details">
-                    <li><i data-lucide="navigation"></i> <strong>Landmark:</strong> Opposite Central Plaza</li>
-                    <li><i data-lucide="car"></i> <strong>Parking:</strong> Valet parking available</li>
-                    <li><i data-lucide="train"></i> <strong>Transport:</strong> 2 mins from Metro Station</li>
-                    <li><i data-lucide="wheelchair"></i> <strong>Access:</strong> Fully wheelchair accessible</li>
-                </ul>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ==============================================
-         SECTION 5: FREQUENTLY ASKED QUESTIONS
-         ============================================== -->
-    <section class="faq-section reveal">
-        <div class="faq-container">
-            <!-- Left Illustration / Image -->
-            <div class="faq-illustration">
-                <img src="images/hero_hair_styling.png" alt="Consultation">
+        <!-- Section 4: Three-Column Bento Box (Contact Info) -->
+        <section class="section bento-contact-section">
+            <div class="container">
+                <div class="bento-contact-grid">
+                    <div class="b-contact-card">
+                        <div class="b-icon"><i class="ph ph-clock"></i></div>
+                        <h3>Opening Hours</h3>
+                        <p>Mon - Fri: 9:00 AM - 8:00 PM</p>
+                        <p>Saturday: 9:00 AM - 6:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                    <div class="b-contact-card b-primary">
+                        <div class="b-icon"><i class="ph ph-phone-call"></i></div>
+                        <h3>Call Us</h3>
+                        <p>For immediate assistance or same-day bookings.</p>
+                        <p class="b-highlight">+1 (310) 555-0199</p>
+                    </div>
+                    <div class="b-contact-card">
+                        <div class="b-icon"><i class="ph ph-envelope-simple-open"></i></div>
+                        <h3>Email Us</h3>
+                        <p>For general inquiries or event bookings.</p>
+                        <p class="b-highlight">hello@aurasalon.com</p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <!-- Right Accordion -->
-            <div class="faq-content">
-                <h2>Frequently Asked <span class="highlight">Questions</span></h2>
-                <div class="contact-accordion">
-                    <!-- Q1 -->
-                    <div class="c-acc-item active">
-                        <div class="c-acc-header">
-                            <h4>Do I need an appointment?</h4>
-                            <i data-lucide="plus"></i>
+        <!-- Section 5: Accordion Layout (FAQ) -->
+        <section class="section faq-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-item active">
+                        <div class="accordion-header">
+                            <h4>What is your cancellation policy?</h4>
+                            <i class="ph ph-caret-down"></i>
                         </div>
-                        <div class="c-acc-body">
-                            <p>While we do accept walk-ins based on availability, we highly recommend booking an appointment to ensure our experts are ready for your personalized session.</p>
-                        </div>
-                    </div>
-                    <!-- Q2 -->
-                    <div class="c-acc-item">
-                        <div class="c-acc-header">
-                            <h4>Can I reschedule?</h4>
-                            <i data-lucide="plus"></i>
-                        </div>
-                        <div class="c-acc-body">
-                            <p>Absolutely. We kindly ask that you provide at least 24 hours notice for rescheduling to avoid any cancellation fees.</p>
+                        <div class="accordion-content">
+                            <p>We kindly request 24 hours notice for any cancellations or rescheduling. Cancellations made with less than 24 hours notice may be subject to a 50% cancellation fee.</p>
                         </div>
                     </div>
-                    <!-- Q3 -->
-                    <div class="c-acc-item">
-                        <div class="c-acc-header">
-                            <h4>Which stylist should I choose?</h4>
-                            <i data-lucide="plus"></i>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>Do you offer consultations before a major color change?</h4>
+                            <i class="ph ph-caret-down"></i>
                         </div>
-                        <div class="c-acc-body">
-                            <p>If you are unsure, you can select "Any Available" or request a free consultation where we will match you with the perfect expert for your hair or skin type.</p>
-                        </div>
-                    </div>
-                    <!-- Q4 -->
-                    <div class="c-acc-item">
-                        <div class="c-acc-header">
-                            <h4>What products do you use?</h4>
-                            <i data-lucide="plus"></i>
-                        </div>
-                        <div class="c-acc-body">
-                            <p>We strictly use premium, cruelty-free, and organic luxury brands that nourish your skin and hair while delivering long-lasting results.</p>
+                        <div class="accordion-content">
+                            <p>Absolutely. We highly recommend a complimentary 15-minute consultation prior to any significant color correction or transformation to ensure we meet your expectations perfectly.</p>
                         </div>
                     </div>
-                    <!-- Q5 -->
-                    <div class="c-acc-item">
-                        <div class="c-acc-header">
-                            <h4>Are bridal consultations free?</h4>
-                            <i data-lucide="plus"></i>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>Are your products cruelty-free?</h4>
+                            <i class="ph ph-caret-down"></i>
                         </div>
-                        <div class="c-acc-body">
-                            <p>Yes, your initial 30-minute bridal consultation is complimentary. We discuss your vision, dress, and trial dates.</p>
+                        <div class="accordion-content">
+                            <p>Yes, all of our house products and the brands we partner with are 100% cruelty-free, sustainable, and formulated with high-quality organic ingredients whenever possible.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>Can I book a private event or bridal party?</h4>
+                            <i class="ph ph-caret-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Yes, we love hosting bridal parties and private events. Please email our concierge at hello@aurasalon.com with your event details to arrange a customized package.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- ==============================================
-         SECTION 6: FINAL LUXURY CTA
-         ============================================== -->
-    <section class="final-cta reveal">
-        <div class="fcta-banner">
-            <div class="fcta-bg"></div>
-            
-            <div class="fcta-content">
-                <h2>Your Luxury Beauty Journey <br><span class="highlight">Starts Today</span></h2>
-                <p>Reserve your appointment and experience personalized beauty services delivered by expert professionals.</p>
-                <div class="fcta-btns">
-                    <button class="btn btn-primary magnetic glow-hover">Reserve Your Visit</button>
-                    <a href="services.html" class="btn btn-outline" style="border-color: white; color: white;">View Services</a>
+    <!-- Section 6: Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3><i class="ph ph-sparkle"></i> Aura<span>.</span></h3>
+                    <p>Elevating beauty through artistry, innovation, and unparalleled luxury.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="#"><i class="ph ph-x-logo"></i></a>
+                        <a href="#"><i class="ph ph-pinterest-logo"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-heading">Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Visit Us</h4>
+                    <ul>
+                        <li>
+                            <i class="ph ph-map-pin"></i>
+                            <span>123 Luxury Avenue, Beverly Hills, CA 90210</span>
+                        </li>
+                        <li>
+                            <i class="ph ph-phone"></i>
+                            <span>+1 (310) 555-0199</span>
+                        </li>
+                        <li>
+                            <i class="ph ph-envelope"></i>
+                            <span>hello@aurasalon.com</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
-            <!-- Golden Particles -->
-            <div id="golden-particles"></div>
-        </div>
-    </section>
-
-    <!-- ==============================================
-         FOOTER
-         ============================================== -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <a href="index.html" class="logo" style="margin-bottom: 20px; display: block;">
-                    <img src="images/luxe_aura_logo.png" alt="Luxe Aura Salon" style="height: 50px; object-fit: contain;">
-                </a>
-                <p>Where luxury meets unparalleled expertise. Elevating beauty standards with personalized care in a premium, relaxing environment.</p>
-                <div class="social-links">
-                    <a href="#" class="social-icon" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-                    <a href="#" class="social-icon" aria-label="Facebook"><i data-lucide="facebook"></i></a>
-                    <a href="#" class="social-icon" aria-label="Twitter"><i data-lucide="twitter"></i></a>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aura Premium Salon & Beauty Parlour. All rights reserved.</p>
             </div>
-            
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-links">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="services.html">Hair Styling</a></li>
-                    <li><a href="services.html">Skin Care</a></li>
-                    <li><a href="services.html">Nail Art</a></li>
-                    <li><a href="services.html">Bridal Packages</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-links">
-                <h4>Contact Info</h4>
-                <ul style="color: rgba(255,255,255,0.7); font-size: 14px;">
-                    <li>123 Luxury Ave, NY</li>
-                    <li>+1 (555) 123-4567</li>
-                    <li>hello@luxeaura.com</li>
-                    <li style="margin-top: 15px; font-weight: bold; color: var(--color-white);">Business Hours</li>
-                    <li>Mon - Sat: 9AM - 8PM</li>
-                    <li>Sun: 10AM - 5PM</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2024 Luxe Aura Salon. All rights reserved.</p>
-            <p>Designed for Luxury.</p>
         </div>
     </footer>
 
-    <!-- JS Dependencies -->
     <script src="js/main.js"></script>
     <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
+        // Simple Accordion JS
+        const accHeaders = document.querySelectorAll('.accordion-header');
+        accHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const parent = header.parentElement;
+                
+                // Close others
+                document.querySelectorAll('.accordion-item').forEach(item => {
+                    if(item !== parent) item.classList.remove('active');
+                });
+                
+                parent.classList.toggle('active');
+            });
+        });
     </script>
 </body>
 </html>

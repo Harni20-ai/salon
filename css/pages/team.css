@@ -1,0 +1,362 @@
+/* team.css */
+
+/* --- SECTION 1: HERO COLLAGE --- */
+.hero-collage {
+    position: relative;
+    padding-top: calc(var(--nav-height-desktop) + 80px);
+    padding-bottom: 100px;
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+
+.collage-text {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.collage-text h1 {
+    font-size: 4rem;
+    color: var(--text-color);
+}
+
+.collage-text p {
+    font-size: 1.25rem;
+    color: var(--text-light);
+}
+
+.collage-grid {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.c-img {
+    position: absolute;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.c-img:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+    z-index: 10;
+}
+
+.c-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.c-img-1 {
+    width: 400px;
+    height: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.c-img-1:hover { transform: translateX(-50%) translateY(-10px); }
+
+.c-img-2 {
+    width: 350px;
+    height: 400px;
+    left: 10%;
+    top: 50px;
+    z-index: 2;
+}
+
+.c-img-3 {
+    width: 350px;
+    height: 400px;
+    right: 10%;
+    top: 50px;
+    z-index: 2;
+}
+
+/* --- SECTION 2: ASYMMETRICAL FLOATING --- */
+.text-center {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.asymmetric-section {
+    background-color: var(--card-bg);
+}
+
+.asym-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 50px 0;
+}
+
+.asym-card {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 900px;
+}
+
+.card-left {
+    margin-right: auto;
+}
+
+.card-right {
+    margin-left: auto;
+    flex-direction: row-reverse;
+}
+
+.asym-img {
+    flex: 1;
+    position: relative;
+}
+
+.asym-img img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+}
+
+/* Decorative offset shape */
+.asym-img::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--primary);
+    border-radius: var(--border-radius);
+    z-index: -1;
+    top: 20px;
+    left: 20px;
+    transition: var(--transition);
+}
+
+.card-right .asym-img::before {
+    left: -20px;
+}
+
+.asym-card:hover .asym-img::before {
+    top: 10px;
+    left: 10px;
+}
+
+.card-right:hover .asym-img::before {
+    left: -10px;
+}
+
+.asym-info {
+    flex: 1;
+    background-color: var(--bg-color);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    z-index: 2;
+}
+
+.asym-info h3 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.asym-info .role {
+    display: inline-block;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.asym-info .rating {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.asym-info .rating i {
+    color: var(--accent);
+}
+
+/* --- SECTION 3: LAYERED SLIDER --- */
+.layered-slider-section {
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+
+.layered-slider {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    align-items: center;
+}
+
+.layered-slider::-webkit-scrollbar { display: none; }
+
+.l-card {
+    min-width: 300px;
+    height: 450px;
+    border-radius: var(--border-radius);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+.l-card:hover {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: var(--shadow-hover);
+    z-index: 2;
+}
+
+.l-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.l-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    padding: 30px 20px;
+    color: #fff;
+    transform: translateY(20px);
+    transition: var(--transition);
+}
+
+.l-card:hover .l-card-overlay {
+    transform: translateY(0);
+}
+
+.l-card-overlay h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.l-card-overlay p {
+    color: var(--primary);
+    margin: 0;
+    font-weight: 600;
+}
+
+/* --- SECTION 4: MULTICOLUMN SHOWCASE --- */
+.multicol-section {
+    background-color: var(--card-bg);
+}
+
+.multicol-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.col-card {
+    text-align: center;
+}
+
+.col-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.col-card:hover img {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md);
+}
+
+.col-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.col-card p {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+/* --- SECTION 5: FULL-WIDTH TYPOGRAPHIC PANEL --- */
+.typo-panel {
+    position: relative;
+    padding: 120px 0;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    text-align: center;
+    overflow: hidden;
+}
+
+.typo-bg {
+    position: absolute;
+    top: -50%;
+    left: -10%;
+    width: 120%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(224, 176, 182, 0.1) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.typo-container {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.typo-panel h2 {
+    font-size: 4rem;
+    color: var(--bg-color);
+    margin-bottom: 30px;
+}
+
+.typo-panel p {
+    font-size: 1.2rem;
+    color: rgba(250, 250, 248, 0.8);
+    margin-bottom: 40px;
+}
+
+.typo-btn {
+    border-color: var(--bg-color);
+    color: var(--bg-color);
+}
+.typo-btn:hover {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Responsive Overrides */
+@media (max-width: 992px) {
+    .collage-grid { height: auto; display: flex; flex-direction: column; gap: 20px; align-items: center; }
+    .c-img { position: static; transform: none !important; width: 100% !important; max-width: 500px; height: 350px; }
+    
+    .asym-card, .card-right { flex-direction: column; gap: 30px; }
+    .asym-img::before { display: none; }
+    
+    .multicol-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+    .typo-panel h2 { font-size: 3rem; }
+}

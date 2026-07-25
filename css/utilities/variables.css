@@ -1,78 +1,45 @@
-/* ==========================================================================
-   CSS Variables - Global Design System
-   ========================================================================== */
-:root {
-    /* Brand Colors */
-    --color-primary: #B76E79; /* Rose Gold */
-    --color-secondary: #F6F0EA; /* Warm Beige */
-    --color-accent: #D4AF37; /* Metallic Gold */
-    
-    /* Neutral Colors */
-    --color-dark: #262626; /* Charcoal Black */
-    --color-grey: #6B6B6B; /* Warm Grey */
-    --color-light: #FCFAF8; /* Ivory White */
-    --color-white: #FFFFFF; /* Pure White */
-    
-    /* Semantic Colors */
-    --color-success: #50C878; /* Soft Emerald */
-    --color-danger: #D9534F; /* Muted Red */
-    
-    /* Gradients */
-    --gradient-bg: linear-gradient(135deg, var(--color-light) 0%, var(--color-secondary) 100%);
-    --gradient-cta: linear-gradient(135deg, var(--color-primary) 0%, #d4959f 100%);
-    --gradient-dark: linear-gradient(135deg, #1a1a1a 0%, var(--color-dark) 100%);
-    
-    /* Typography */
-    --font-heading: 'Playfair Display', serif;
-    --font-subheading: 'Cormorant Garamond', serif;
-    --font-body: 'Poppins', sans-serif;
-    --font-button: 'Poppins', sans-serif;
-    --font-stats: 'Montserrat', sans-serif;
-    --font-pricing: 'DM Sans', sans-serif;
-    
-    /* Spacing System */
-    --spacing-hero-top: 160px;
-    --spacing-hero-bottom: 140px;
-    --spacing-section: 120px;
-    --spacing-card: 32px;
-    --spacing-grid: 40px;
+/* variables.css */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 
-    /* Shadows */
-    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.03);
-    --shadow-medium: 0 15px 40px rgba(0, 0, 0, 0.05);
-    --shadow-hover: 0 25px 60px rgba(183, 110, 121, 0.12);
-    
-    /* Glassmorphism */
-    --glass-bg: rgba(255, 255, 255, 0.92);
-    --glass-bg-dark: rgba(38, 38, 38, 0.92);
-    --glass-border: rgba(255, 255, 255, 0.3);
-    --glass-blur: blur(20px);
-    
-    /* Transitions & Animations */
-    --transition-fast: 0.25s cubic-bezier(0.22, 1, 0.36, 1);
-    --transition-medium: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-    --transition-slow: 1s cubic-bezier(0.22, 1, 0.36, 1);
-    
-    /* Z-Index Layers */
-    --z-negative: -1;
-    --z-base: 0;
-    --z-content: 10;
-    --z-dropdown: 100;
-    --z-sticky: 200;
-    --z-modal: 1000;
+:root {
+  /* Colors */
+  --primary: #E0B0B6;      /* Soft Rose Pink */
+  --secondary: #FDFBF7;    /* Warm Ivory */
+  --accent: #D4AF37;       /* Champagne Gold */
+  --bg-color: #FAFAF8;     /* Off White / Cream */
+  --card-bg: #FFFFFF;      /* Pure White */
+  --text-color: #2C2C2C;   /* Deep Charcoal */
+  --text-light: #5A5A5A;   /* Soft Charcoal */
+  
+  /* Layout & Spacing */
+  --nav-height-desktop: 80px;
+  --nav-height-mobile: 60px;
+  --section-padding: 100px 5%;
+  --border-radius: 12px;
+  --container-max-width: 1280px;
+  
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Manrope', sans-serif;
+  
+  /* Shadows & Transitions */
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 20px 30px rgba(0, 0, 0, 0.12);
+  --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Dark Mode Overrides */
+/* Dark Mode Variables */
 [data-theme="dark"] {
-    --color-light: #121212;
-    --color-dark: #fefdfb;
-    --color-white: #1e1e1e;
-    
-    --gradient-bg: linear-gradient(135deg, #121212 0%, #1e1e1e 100%);
-    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.3);
-    --shadow-medium: 0 15px 40px rgba(0, 0, 0, 0.4);
-    --shadow-hover: 0 20px 50px rgba(183, 110, 121, 0.3);
-    
-    --glass-bg: rgba(30, 30, 30, 0.8);
-    --glass-border: rgba(255, 255, 255, 0.05);
+  --primary: #C98A92;      /* Muted Rose Pink */
+  --secondary: #2C2C2C;    /* Dark Charcoal replacement for Ivory */
+  --accent: #E2B94A;       /* Brighter Gold for contrast */
+  --bg-color: #1A1A1A;     /* Deep Black/Grey */
+  --card-bg: #222222;      /* Slightly lighter black */
+  --text-color: #FDFBF7;   /* Off white text */
+  --text-light: #B0B0B0;   /* Light grey text */
+  
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0 20px 30px rgba(0, 0, 0, 0.5);
 }
